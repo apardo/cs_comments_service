@@ -3,13 +3,13 @@ development:
     default:
       database: cs_comments_service_development
       hosts:
-        - localhost:27017
+        - venus.upex.edu.ec:27017
 test:
   sessions:
     default:
       database: cs_comments_service_test
       hosts:
-        - localhost:27017
+        - venus.upex.edu.ec:27017
 
 common: &default_session
   uri: <%= ENV['MONGOHQ_URL'] %>
