@@ -135,7 +135,7 @@ namespace :db do
     Mongoid.configure do |config|
       config.connect_to("cs_comments_service_bulk_test")
     end
-    connnection = Mongo::Connection.new("127.0.0.1", "27017")
+    connnection = Mongo::Connection.new("venus.upex.edu.ec", "27017")
     db = Mongo::Connection.new.db("cs_comments_service_bulk_test")
 
     CommentThread.create_indexes
