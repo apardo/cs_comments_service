@@ -18,7 +18,7 @@ class User
   validates_presence_of :external_id
   validates_presence_of :username
   validates_uniqueness_of :external_id
-  validates_uniqueness_of :username
+  #validates_uniqueness_of :username
 
   index( {external_id: 1}, {unique: true, background: true} )
 
